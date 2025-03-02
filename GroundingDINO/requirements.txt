@@ -1,0 +1,12 @@
+torch==2.3.0
+torchvision
+transformers
+addict
+yapf
+timm
+numpy
+opencv-python
+supervision>=0.22.0
+pycocotools
+omegaconf
+hydra-core

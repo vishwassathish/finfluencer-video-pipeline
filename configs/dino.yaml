@@ -1,0 +1,22 @@
+hydra:
+  run:
+    dir: logdir/${exp_id}/${seed}
+
+exp_id: finfluencer
+seed: 0
+logdir: ${hydra:run.dir}
+
+# Inference
+batch_size: 64
+size: 512
+device: cuda:0
+compile: True
+data: ~/shared_drive/Data/Tiktok-Frames   # Mounted drive containing the TikTok frames
+
+# Model
+model:
+  weights: /home/vsathish/projects/finfluencer-analysis/GroundingDINO/.weights/groundingdino_swint_ogc.pth
+  dino_config: /home/vsathish/projects/finfluencer-analysis/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py
+  box_threshold: 0.4
+  text_threshold: 0.25
+  prompt: "laptop screen. text in video. number. stock ticker."
