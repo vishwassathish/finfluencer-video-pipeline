@@ -139,11 +139,8 @@ outputs/
 subs/
 logs/
 
-# Project
 grounding/config/configs
 grounding/version.py
 
 vis/
 tmp/
-
-.weights/

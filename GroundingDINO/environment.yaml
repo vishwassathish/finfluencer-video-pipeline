@@ -1,3 +1,4 @@
+name: dino
 channels:
   - pytorch
   - nvidia
@@ -244,4 +245,4 @@ dependencies:
       - supervision==0.6.0
       - torchaudio==2.0.2
       - torchvision==0.15.2
-# prefix: C:\Users\Makoto\miniconda3\envs\dino
+prefix: C:\Users\Makoto\miniconda3\envs\dino
